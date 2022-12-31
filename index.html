@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Informatika A</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="asset/icon/icons8-laravel-100.png" alt="icon" class="logo-img" />
+            <h1 class="logo-title">INFORMATIKA A</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#profil" class="li-a"> PROFIL </a>
+                </li>
+                <li>
+                    <a href="#about" class="li-a"> ABOUT </a>
+                </li>
+                <li>
+                    <a href="photo.html" class="li-a"> PHOTO </a>
+                </li>
+            </ul>
+        </nav>
+        <button class="btn-cta">
+            <a href="https://www.instagram.com/computerscience_20/">Ikuti Kami</a>
+        </button>
+    </header>
+    <div class="container">
+        <div class="intro" id="profil">
+            <p class="title"> Hello, Informatika A Here!</p>
+            <p class="description"> Technology Influencer From Commoners</p>
+            <img src="asset/img/ti1.JPG" alt="informatika foto 1" class="img-foto" />
+        </div>
+    </div>
+    <div class="parallax">
+        <div class="profil">
+            <p class="title"> Kami Adalah Programmer Handal</p>
+            <p class="description"> Ngoding aja dulu, Jagonya belakangan.</p>
+            <div class="mt-10">
+                <button class="btn-cta" onclick="redirInstagram()"> Ikuti Kami</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-item" id="about">
+                    <img src="asset/icon/icons8-network-100.png" alt="1" class="icn-1" />
+                    <p class="card-title"> Network</p>
+                    <p class="card-description"> Mampu dalam bidang Jaringan akses komputer.</p>
+                </div>
+                <div class="card-item">
+                    <img src="asset/icon/icons8-laptop-coding-100.png" alt="1" class="icn-1" />
+                    <p class="card-title"> Programmer</p>
+                    <p class="card-description">Belajar tentang pembuatan website, aplikasi, dan struktur logika.
+                    </p>
+                </div>
+                <div class="card-item">
+                    <img src="asset/icon/icons8-windows-client-100.png" alt="1" class="icn-1" />
+                    <p class="card-title">Sistem Komputer</p>
+                    <p class="card-description">Memahami seluruh kinerja atau tugas dari komputer.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <p class="footer-fnt"> Teknik Informatika A Unisan || &copy; anchascott web || 2022/2023</p>
+    </footer>
+
+    <script>
+        function redirInstagram () {
+            window.location.href = "https://www.instagram.com/computerscience_20/"
+        }
+    </script>
+</body>
+
+</html>

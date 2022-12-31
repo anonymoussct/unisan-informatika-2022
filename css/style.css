@@ -1,0 +1,137 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+/*	general	*/
+
+section{
+    padding: 50px 0;
+}
+
+/*	gallery */
+
+.gallery-title{
+    font-size: 36px;
+    color: #64843f;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.filter-button{
+    font-size: 18px;
+    border: 2px solid #3F6184;
+	padding:5px 10px;
+    text-align: center;
+    color: #3f8455;
+    margin-bottom: 30px;
+	background:transparent;
+    border-radius: 8px;
+    transition: all 0.5s ease 0s;
+    
+}
+.filter-button:hover {
+    color: #000000;
+    cursor: pointer;
+    background: #3eff3e;
+}
+
+
+.filter-button:focus,
+.filter-button.active{
+    color: #050505;
+    background-color:#6ff460;
+	outline:none;
+}
+.filter-button-ig{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 20px;
+    position:absolute;
+    border: 1.4px solid #ffffff;
+	padding:1px 3px;
+    text-align: center;
+    color: #3F6184;
+    margin-bottom: 10px;
+	background:transparent;
+    border-radius: 8px;
+}
+.filter-button-ig:hover,
+
+.filter-button-ig.active{
+    color: #ffffff;
+    background-color:#5393f9;
+	outline:none;
+}
+.ig-icn {
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+}
+
+.gallery_product{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+	padding:0px;
+	position:relative;
+}
+.gallery_product .img-info{
+	position: absolute;
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+	overflow:hidden;
+	color:#fff;
+    text-align: center;
+	top:0;
+	display:none;
+	   -webkit-transition: 2s;
+    transition: 2s;
+}
+
+.border-nama {
+    font-weight: bolder;
+    border-radius: 3px;
+    box-shadow: 2px 1px 2px 2px rgba(255, 255, 255, 0.5);
+    transition: all 0.5s ease 0s;
+    color:white;
+}
+.border-nama:hover {
+    text-decoration: none;
+
+    color: rgb(131, 255, 42);
+}
+.id-nama {
+    position:relative;
+    padding-top: -5;
+    margin: -5;
+    margin-top: 0px;
+    text-align: left;
+    margin-left: 8px; 
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+
+.gallery_product:hover .img-info{
+	display:block;
+   -webkit-transition: 2s;
+    transition: 2s;
+}
+
+/*	end gallery */
+@media  screen and (max-width: 500px){
+    .gallery_product {
+        flex-direction: column;
+        gap: 0;
+    }
+    .gallery_product .img-info {
+        width: 100%;
+    }
+    .data-filter {
+        padding: 0;
+    }
+}
